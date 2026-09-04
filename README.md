@@ -89,8 +89,12 @@ happens. The finding stands.
 
 ![Effect sizes](figures/09_effect_sizes.png)
 
-**7 of 7** environmental variables differ significantly by season, several with large effect sizes.
-Of 8 farmer-controlled inputs, effect sizes are **negligible**.
+**7 of 7** environmental variables differ significantly by season — **six of them with large
+effect sizes**. Soil pH is the lone exception: significant, but at ε² = 0.0011, the same
+negligible band as the farmer inputs. That is what a variable which is genuinely *not* seasonal
+looks like, and it is a useful check that the effect-size column is doing real work.
+
+Of 8 farmer-controlled inputs, effect sizes are **negligible** across the board.
 
 Effect sizes matter here more than p-values. At n = 4,000 a difference far too small to matter on any
 real farm still returns p < 0.05, so every test in this project reports ε² or rank-biserial
@@ -191,7 +195,7 @@ cross-crop and cross-season statement uses `yield ÷ crop-median-yield`.
 
 ```
 seasonal-agriculture-performance-analysis/
-├── Seasonal_Agriculture_Performance_Analysis.ipynb   # the analysis — 74 cells, fully executed
+├── Seasonal_Agriculture_Performance_Analysis.ipynb   # the analysis — 76 cells, fully executed
 ├── data/
 │   └── seasonal_agriculture_performance_dataset.csv  # 4,000 farms × 28 attributes
 ├── figures/                                          # 8 exported charts, PNG at 150 dpi
